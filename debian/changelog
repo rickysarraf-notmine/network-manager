@@ -1,3 +1,9 @@
+network-manager (1.28.0-2.1) UNRELEASED; urgency=medium
+
+  * Add patch to use bind-dynamic instead
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Fri, 01 Jan 2021 14:20:32 +0530
+
 network-manager (1.28.0-2) unstable; urgency=medium
 
   * Demote libpam-systemd to Recommends.
