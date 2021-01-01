@@ -1,0 +1,39 @@
+From: Ritesh Raj Sarraf <rrs@debian.org>
+Date: Fri, 1 Jan 2021 14:18:00 +0530
+Subject: Use bind-dynamic instead of bind-interfaces
+
+bind-interfaces binds to a single port whereas bind-dynamic, as the name
+suggests, binds to dynamically added/removed ports, which is what I want
+because my virtual network/bridge interfaces will come an go for
+different technologies like: nspawn, dockerd, uml, libvirt
+---
+ src/dns/nm-dns-dnsmasq.c         | 2 +-
+ src/dnsmasq/nm-dnsmasq-manager.c | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/dns/nm-dns-dnsmasq.c b/src/dns/nm-dns-dnsmasq.c
+index 97f1dfa..dbb84b2 100644
+--- a/src/dns/nm-dns-dnsmasq.c
++++ b/src/dns/nm-dns-dnsmasq.c
+@@ -521,7 +521,7 @@ _gl_pid_spawn_next_step(void)
+     argv[argv_idx++] = "--no-resolv"; /* Use only commandline */
+     argv[argv_idx++] = "--keep-in-foreground";
+     argv[argv_idx++] = "--no-hosts"; /* don't use /etc/hosts to resolve */
+-    argv[argv_idx++] = "--bind-interfaces";
++    argv[argv_idx++] = "--bind-dynamic";
+     argv[argv_idx++] = "--pid-file=" PIDFILE;
+     argv[argv_idx++] = "--listen-address=127.0.0.1"; /* Should work for both 4 and 6 */
+     argv[argv_idx++] = "--cache-size=400";
+diff --git a/src/dnsmasq/nm-dnsmasq-manager.c b/src/dnsmasq/nm-dnsmasq-manager.c
+index 2dd4afc..d3bc7df 100644
+--- a/src/dnsmasq/nm-dnsmasq-manager.c
++++ b/src/dnsmasq/nm-dnsmasq-manager.c
+@@ -129,7 +129,7 @@ create_dm_cmd_line(const char *       iface,
+ 
+     nm_strv_ptrarray_add_string_dup(cmd, "--no-hosts");
+     nm_strv_ptrarray_add_string_dup(cmd, "--keep-in-foreground");
+-    nm_strv_ptrarray_add_string_dup(cmd, "--bind-interfaces");
++    nm_strv_ptrarray_add_string_dup(cmd, "--bind-dynamic");
+     nm_strv_ptrarray_add_string_dup(cmd, "--except-interface=lo");
+     nm_strv_ptrarray_add_string_dup(cmd, "--clear-on-reload");
+ 
