@@ -7,6 +7,7 @@ include /usr/share/dpkg/architecture.mk
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all optimize=-lto
 
 export PYTHON=/usr/bin/python3
+export DEB_BUILD_OPTIONS=nocheck
 
 PPPD_PLUGIN_DIR := $(shell dh_ppp --plugin-dir)
 
