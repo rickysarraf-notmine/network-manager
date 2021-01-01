@@ -3,6 +3,7 @@
 include /usr/share/dpkg/architecture.mk
 
 export PYTHON=/usr/bin/python3
+export DEB_BUILD_OPTIONS=nocheck
 
 PPPD_PLUGIN_DIR := $(shell dh_ppp --plugin-dir)
 
