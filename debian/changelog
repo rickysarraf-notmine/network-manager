@@ -1,3 +1,12 @@
+network-manager (1.29.90-1.1) UNRELEASED; urgency=medium
+
+  * Add patch to use bind-dynamic instead
+  * Update changelog
+  * Disable tests
+  * Re-do bind-dynamic changes
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Fri, 12 Feb 2021 16:34:05 +0530
+
 network-manager (1.29.90-1) unstable; urgency=medium
 
   [ Michael Biebl ]
