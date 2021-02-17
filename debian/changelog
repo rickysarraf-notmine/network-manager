@@ -5,7 +5,7 @@ network-manager (1.29.90-2.1) UNRELEASED; urgency=medium
   * Disable tests
   * Re-do bind-dynamic changes
 
- -- Ritesh Raj Sarraf <rrs@debian.org>  Fri, 12 Feb 2021 16:34:05 +0530
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Wed, 17 Feb 2021 13:40:09 +0530
 
 network-manager (1.29.90-2) unstable; urgency=medium
 
