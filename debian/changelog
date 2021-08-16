@@ -1,11 +1,16 @@
-network-manager (1.30.0-1.1) UNRELEASED; urgency=medium
+network-manager (1.30.6-1) unstable; urgency=medium
 
-  * Add patch to use bind-dynamic instead
-  * Update changelog
-  * Disable tests
-  * Re-do bind-dynamic changes
+  * New upstream version 1.30.6
+  * Rebase patches
 
- -- Ritesh Raj Sarraf <rrs@debian.org>  Wed, 17 Feb 2021 13:40:09 +0530
+ -- Michael Biebl <biebl@debian.org>  Mon, 16 Aug 2021 09:56:57 +0200
+
+network-manager (1.30.0-2) unstable; urgency=medium
+
+  * core: fix crash in nm_wildcard_match_check()
+    (CVE-2021-20297, Closes: #986809)
+
+ -- Michael Biebl <biebl@debian.org>  Mon, 12 Apr 2021 21:15:36 +0200
 
 network-manager (1.30.0-1) unstable; urgency=medium
 
@@ -13,7 +18,6 @@ network-manager (1.30.0-1) unstable; urgency=medium
   * Rebase patches
 
  -- Michael Biebl <biebl@debian.org>  Thu, 18 Feb 2021 19:25:36 +0100
->>>>>>> origin/debian/master
 
 network-manager (1.29.90-2) unstable; urgency=medium
 
