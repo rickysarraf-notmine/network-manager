@@ -12,7 +12,7 @@ different technologies like: nspawn, dockerd, uml, libvirt
  2 files changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/src/core/dns/nm-dns-dnsmasq.c b/src/core/dns/nm-dns-dnsmasq.c
-index dcff98e..2e2891b 100644
+index 126e0a2..0b2a9d0 100644
 --- a/src/core/dns/nm-dns-dnsmasq.c
 +++ b/src/core/dns/nm-dns-dnsmasq.c
 @@ -521,7 +521,7 @@ _gl_pid_spawn_next_step(void)
@@ -25,7 +25,7 @@ index dcff98e..2e2891b 100644
      argv[argv_idx++] = "--listen-address=127.0.0.1"; /* Should work for both 4 and 6 */
      argv[argv_idx++] = "--cache-size=400";
 diff --git a/src/core/dnsmasq/nm-dnsmasq-manager.c b/src/core/dnsmasq/nm-dnsmasq-manager.c
-index 82c002b..d36135f 100644
+index e8697e8..c231742 100644
 --- a/src/core/dnsmasq/nm-dnsmasq-manager.c
 +++ b/src/core/dnsmasq/nm-dnsmasq-manager.c
 @@ -129,7 +129,7 @@ create_dm_cmd_line(const char *       iface,
