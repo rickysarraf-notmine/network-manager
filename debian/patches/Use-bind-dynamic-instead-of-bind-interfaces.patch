@@ -11,11 +11,9 @@ different technologies like: nspawn, dockerd, uml, libvirt
  src/core/dnsmasq/nm-dnsmasq-manager.c | 2 +-
  2 files changed, 2 insertions(+), 2 deletions(-)
 
-diff --git a/src/core/dns/nm-dns-dnsmasq.c b/src/core/dns/nm-dns-dnsmasq.c
-index 126e0a2..0b2a9d0 100644
 --- a/src/core/dns/nm-dns-dnsmasq.c
 +++ b/src/core/dns/nm-dns-dnsmasq.c
-@@ -521,7 +521,7 @@ _gl_pid_spawn_next_step(void)
+@@ -520,7 +520,7 @@
      argv[argv_idx++] = "--no-resolv"; /* Use only commandline */
      argv[argv_idx++] = "--keep-in-foreground";
      argv[argv_idx++] = "--no-hosts"; /* don't use /etc/hosts to resolve */
@@ -24,11 +22,9 @@ index 126e0a2..0b2a9d0 100644
      argv[argv_idx++] = "--pid-file=" PIDFILE;
      argv[argv_idx++] = "--listen-address=127.0.0.1"; /* Should work for both 4 and 6 */
      argv[argv_idx++] = "--cache-size=400";
-diff --git a/src/core/dnsmasq/nm-dnsmasq-manager.c b/src/core/dnsmasq/nm-dnsmasq-manager.c
-index e8697e8..c231742 100644
 --- a/src/core/dnsmasq/nm-dnsmasq-manager.c
 +++ b/src/core/dnsmasq/nm-dnsmasq-manager.c
-@@ -129,7 +129,7 @@ create_dm_cmd_line(const char *       iface,
+@@ -137,7 +137,7 @@
  
      nm_strv_ptrarray_add_string_dup(cmd, "--no-hosts");
      nm_strv_ptrarray_add_string_dup(cmd, "--keep-in-foreground");
