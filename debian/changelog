@@ -34,6 +34,13 @@ network-manager (1.40.2-1) unstable; urgency=medium
   * New upstream version 1.40.2
 
  -- Michael Biebl <biebl@debian.org>  Tue, 18 Oct 2022 12:29:15 +0200
+=======
+network-manager (1.40.0-1.1) UNRELEASED; urgency=medium
+
+  * Rebase patches
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Sat, 27 Aug 2022 12:00:27 +0530
+>>>>>>> 339d1c72 (Update changelog)
 
 network-manager (1.40.0-1) unstable; urgency=medium
 
@@ -170,9 +177,6 @@ network-manager (1.35.91-1) unstable; urgency=medium
   * Clean up nm-priv-helper.service enablement state on upgrades
 
  -- Michael Biebl <biebl@debian.org>  Mon, 14 Feb 2022 22:24:06 +0100
-=======
- -- Ritesh Raj Sarraf <rrs@debian.org>  Mon, 31 Jan 2022 22:01:15 +0530
->>>>>>> ffcc5a71 (Update changelog)
 
 network-manager (1.34.0-2) unstable; urgency=medium
 
