@@ -1,3 +1,10 @@
+network-manager (1.40.10-1.1) UNRELEASED; urgency=medium
+
+  * Refresh patches
+  * Rebased to latest
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Thu, 12 Jan 2023 12:46:45 +0530
+
 network-manager (1.40.10-1) unstable; urgency=medium
 
   * New upstream version 1.40.10
