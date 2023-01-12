@@ -13,7 +13,7 @@ different technologies like: nspawn, dockerd, uml, libvirt
 
 --- a/src/core/dns/nm-dns-dnsmasq.c
 +++ b/src/core/dns/nm-dns-dnsmasq.c
-@@ -520,7 +520,7 @@
+@@ -521,7 +521,7 @@
      argv[argv_idx++] = "--no-resolv"; /* Use only commandline */
      argv[argv_idx++] = "--keep-in-foreground";
      argv[argv_idx++] = "--no-hosts"; /* don't use /etc/hosts to resolve */
