@@ -1,3 +1,11 @@
+network-manager (1.40.12-1.1) UNRELEASED; urgency=medium
+
+  * Add patch to use bind-dynamic instead
+  * Disable tests
+  * Mark branch bind-dynamic as debian branch for gbp
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Fri, 27 Jan 2023 14:04:56 +0530
+
 network-manager (1.40.12-1) unstable; urgency=medium
 
   * New upstream version 1.40.12
