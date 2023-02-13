@@ -24,7 +24,7 @@ different technologies like: nspawn, dockerd, uml, libvirt
      argv[argv_idx++] = "--cache-size=400";
 --- a/src/core/dnsmasq/nm-dnsmasq-manager.c
 +++ b/src/core/dnsmasq/nm-dnsmasq-manager.c
-@@ -137,7 +137,7 @@
+@@ -136,7 +136,7 @@
  
      nm_strv_ptrarray_add_string_dup(cmd, "--no-hosts");
      nm_strv_ptrarray_add_string_dup(cmd, "--keep-in-foreground");
